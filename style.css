@@ -221,6 +221,34 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Exo';
+  src: url("../../font/Exo-Light.eot");
+  src: url("../../font/Exo-Light.eot?#iefix") format("embedded-opentype"), url("../../font/Exo-Light.woff2") format("woff2"), url("../../font/Exo-Light.woff") format("woff"), url("../../font/Exo-Light.ttf") format("truetype"), url("../../font./Exo-Light.svg#Exo-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../font/Exo-LightItalic.eot");
+  src: url("../../font/Exo-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../font/Exo-LightItalic.woff2") format("woff2"), url("../../font/Exo-LightItalic.woff") format("woff"), url("../../font/Exo-LightItalic.ttf") format("truetype"), url("../../font/Exo-LightItalic.svg#Exo-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../font/Exo-Medium.eot");
+  src: url("../../font/Exo-Medium.eot?#iefix") format("embedded-opentype"), url("../../font/Exo-Medium.woff2") format("woff2"), url("../../font/Exo-Medium.woff") format("woff"), url("../../font/Exo-Medium.ttf") format("truetype"), url("../../font/Exo-Medium.svg#Exo-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../font/Exo-MediumItalic.eot");
+  src: url("../../font/Exo-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../../font/Exo-MediumItalic.woff2") format("woff2"), url("../../font/Exo-MediumItalic.woff") format("woff"), url("../../font/Exo-MediumItalic.ttf") format("truetype"), url("../../font/Exo-MediumItalic.svg#Exo-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic; }
+
 .quote-icon-left,
 .quote-icon-right {
   font-size: 100px;
@@ -628,11 +656,12 @@ body {
   background-color: #222222; }
 
 .qod-logo {
-  text-align: center;
+  text-align: left;
   border: solid red; }
   .qod-logo img {
-    height: 200px;
-    width: 50%; }
+    padding-left: 10px;
+    height: auto;
+    width: 300px; }
 
 .post {
   text-align: center;
@@ -641,20 +670,35 @@ body {
   border: solid salmon; }
 
 .site-main {
-  position: relative;
-  border: pink solid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr; }
-  .site-main .quote-icon-left {
-    grid-column: 1;
-    grid-row: 1; }
-  .site-main .post {
-    grid-column: 2;
-    grid-row: 1; }
-  .site-main .quote-icon-right {
-    grid-column: 3;
-    grid-row: 1; }
-  .site-main .new-quote-button {
-    grid-column-start: 1;
-    grid-column-end: 4; }
+  grid-template-areas: "post" "quote-button"; }
+
+.post {
+  grid-area: post; }
+
+.new-quote-button {
+  grid-area: quote-button; }
+
+.quote-icon-left,
+.quote-icon-right {
+  display: none; }
+
+@media only screen and (max-width: 600px) {
+  .site-main {
+    position: relative;
+    border: pink solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr; }
+    .site-main .quote-icon-left {
+      grid-column: 1;
+      grid-row: 1; }
+    .site-main .post {
+      grid-column: 2;
+      grid-row: 1; }
+    .site-main .quote-icon-right {
+      grid-column: 3;
+      grid-row: 1; }
+    .site-main .new-quote-button {
+      grid-column-start: 1;
+      grid-column-end: 4; } }

@@ -9,16 +9,18 @@ body {
     background-color: #222222;
 }
 
-.qod-logo {
-    text-align: center;
 
+//mobile
+
+.qod-logo {
+    text-align: left;
     border: solid red;
 
     img {
-        height: 200px;
-        width: 50%;
+        padding-left: 10px;
+        height: auto;
+        width: 300px;
     }
-
 }
 
 .post {
@@ -26,39 +28,65 @@ body {
     color: #ffffff;
     font-size: 16px;
     border: solid salmon;
-
 }
 
 .site-main {
-    position: relative;
-    border: pink solid;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "post"
+        "quote-button";
+}
 
-    .quote-icon-left {
+.post {
+    grid-area: post;
+}
 
-        grid-column: 1;
-        grid-row: 1;
+.new-quote-button {
+    grid-area: quote-button;
+
+}
+
+
+.quote-icon-left,
+.quote-icon-right {
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .site-main {
+        position: relative;
+        border: pink solid;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        .quote-icon-left {
+
+            grid-column: 1;
+            grid-row: 1;
+
+        }
+
+        .post {
+
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        .quote-icon-right {
+            grid-column: 3;
+            grid-row: 1;
+
+
+        }
+
+        .new-quote-button {
+            grid-column-start: 1;
+            grid-column-end: 4;
+
+
+        }
 
     }
-
-    .post {
-
-        grid-column: 2;
-        grid-row: 1;
-    }
-
-    .quote-icon-right {
-        grid-column: 3;
-        grid-row: 1;
-
-    }
-
-    .new-quote-button {
-        grid-column-start: 1;
-        grid-column-end: 4;
-
-    }
-
 }
