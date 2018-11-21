@@ -15,7 +15,8 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 			<?php endwhile; // End of the loop. ?>
-
+		  <span class = "quote-icon-left"> <i class="fas fa-quote-left"></i></span>
+          <span class="quote-icon-left"><i class="fas fa-quote-right"></i></span>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

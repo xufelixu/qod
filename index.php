@@ -9,30 +9,21 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+<div class = "quote-icon-left"> <i class="fas fa-quote-left"></i></div>
+		<?php 
+		
+	    if ( have_posts() ) : 
+			
+		while(have_posts()): the_post();
+            get_template_part('template-parts/content');
+		endwhile;
 
-		<?php if ( have_posts() ) : ?>
+	    else:
+		 get_template_part('template-parts/content','none');
 
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-			<?php endif; ?>
-
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content' ); ?>
-
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
-
+        endif; 
+        ?>
+<div class="quote-icon-right"><i class="fas fa-quote-right"></i></div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

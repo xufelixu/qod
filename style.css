@@ -221,6 +221,13 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+.quote-icon-left,
+.quote-icon-right {
+  font-size: 100px;
+  color: #00cc00;
+  border: solid purple;
+  text-align: center; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -235,14 +242,22 @@ textarea {
   line-height: 1.5; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   clear: both; }
 
 /* Copy */
 p {
   margin-bottom: 1.5rem; }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -261,15 +276,20 @@ pre {
   overflow: auto;
   padding: 1.6rem; }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: .9375rem; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
@@ -405,6 +425,17 @@ input[type="search"] {
 textarea {
   padding-left: 3px;
   width: 100%; }
+
+#new-quote-button {
+  border: 1px solid #00cc00;
+  color: #00cc00;
+  background: #222222;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  font-size: 16px;
+  display: block;
+  margin: 0 auto; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -593,3 +624,37 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
+body {
+  background-color: #222222; }
+
+.qod-logo {
+  text-align: center;
+  border: solid red; }
+  .qod-logo img {
+    height: 200px;
+    width: 50%; }
+
+.post {
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  border: solid salmon; }
+
+.site-main {
+  position: relative;
+  border: pink solid;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr; }
+  .site-main .quote-icon-left {
+    grid-column: 1;
+    grid-row: 1; }
+  .site-main .post {
+    grid-column: 2;
+    grid-row: 1; }
+  .site-main .quote-icon-right {
+    grid-column: 3;
+    grid-row: 1; }
+  .site-main .new-quote-button {
+    grid-column-start: 1;
+    grid-column-end: 4; }

@@ -26,6 +26,14 @@
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
 
+	<!--qod-logo-->	
+	 <section class="qod-logo">
+	 <img src="<?php echo get_template_directory_uri() . '/qod-logo.svg' ?>"
+     class="qod-logos" alt="qod-logos"/></a>
+     </section>
+
+
+
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
