@@ -758,3 +758,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; } }
+
+.entry-title,
+.entry-content {
+  color: white; }

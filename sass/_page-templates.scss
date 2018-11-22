@@ -13,8 +13,9 @@ body {
 }
 
 
-//mobile
 
+//home-page
+//mobile
 
 .qod-logo {
     text-align: left;
@@ -146,49 +147,13 @@ body {
 
     }
 
+}
 
-
-
-
+//about
+.entry-title,
+.entry-content {
+    color: white;
 
 }
 
-
-
-
-
-//     .site-main {
-//         position: relative;
-//         border: pink solid;
-//         display: grid;
-//         grid-template-columns: 1fr 1fr 1fr;
-//         grid-template-rows: 1fr 1fr;
-
-//         .quote-icon-left {
-
-//             grid-column: 1;
-//             grid-row: 1;
-
-//         }
-
-//         .post {
-
-//             grid-column: 2;
-//             grid-row: 1;
-//         }
-
-//         .quote-icon-right {
-//             grid-column: 3;
-//             grid-row: 1;
-
-
-//         }
-
-//         .new-quote-button {
-//             grid-column-start: 1;
-//             grid-column-end: 4;
-
-
-//         }
-
-//     }
+@media all and (min-width: 1080px) {}
