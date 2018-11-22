@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * The template for displaying page-submit.
  *
  * @package QOD_Starter_Theme
  */

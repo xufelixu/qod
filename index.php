@@ -10,6 +10,8 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 <div class = "quote-icon-left"> <i class="fas fa-quote-left"></i></div>
+		
+<div class="quote-icon-right"><i class="fas fa-quote-right"></i></div>		
 		<?php 
 		
 	    if ( have_posts() ) : 
@@ -23,7 +25,7 @@ get_header(); ?>
 
         endif; 
         ?>
-<div class="quote-icon-right"><i class="fas fa-quote-right"></i></div>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

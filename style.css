@@ -252,9 +252,7 @@ th {
 .quote-icon-left,
 .quote-icon-right {
   font-size: 100px;
-  color: #00cc00;
-  border: solid purple;
-  text-align: center; }
+  color: #00cc00; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -673,10 +671,7 @@ body {
 
 .new-quote-button {
   border: solid red;
-  display: block;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start; }
+  display: block; }
 
 .quote-icon-left,
 .quote-icon-right {
@@ -722,10 +717,44 @@ body {
     height: auto;
     border: solid greenyellow; }
 
-@media all and (max-width: 2040px) {
+@media all and (min-width: 1080px) {
+  .post {
+    width: 55%;
+    font-size: 29px;
+    position: relative;
+    left: 300px;
+    text-align: center; }
   .quote-icon-left,
   .quote-icon-right {
     display: block;
-    border: solid goldenrod; }
+    border: solid goldenrod;
+    width: 15%; }
+  .quote-icon-left {
+    position: absolute;
+    left: 30px;
+    text-align: right; }
+  .quote-icon-right {
+    position: absolute;
+    right: 30px; }
   .qod-logo {
-    text-align: center; } }
+    text-align: center; }
+  .site-info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: white;
+    font-family: Exo Web, sans-serif;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .new-quote-button {
+    border: solid red;
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
