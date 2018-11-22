@@ -6,22 +6,40 @@
  */
 
 ?>
-			</div><!-- #content -->
+		<div>	
 
-			<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer id="colophon" class="site-footer" role="contentinfo">
 
-                   <nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-				</nav><!-- #site-navigation -->
+                <!-- <nav id="site-navigation" class="main-navigation" role="navigation">-->
+					
 
-				<!-- <div class="site-info">
-			<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
-				</div>     .site-info -->
-			</footer><!-- #colophon -->
-		</div><!-- #page -->
+		 <div class="site-info">
+
+	 		  <div class="footer-menu"><?php wp_nav_menu( array( 'theme_location' => 'primary',
+	   			'menu_id' => 'primary-menu' ) ); ?>  
+	   		 </div>
+	  
+	  			<div class="footer">
+	 				<?php echo( 'Proudly powered by' ) ; ?>
+					<a href="<?php echo esc_url( 'https://redacademy.com/vancouver/' ); ?>">
+	  				<?php printf( esc_html( 'Red Academy' )); ?></a>
+ 				</div>			
+		   </div>  <!--.site-info -->
+	</footer><!-- #colophon-->
+		</div>          <!-- #page -->
 
 		<?php wp_footer(); ?>
 
-	</body>
+	
+
+
+
+
+
+
+
+
+
+
+</body>
 </html>

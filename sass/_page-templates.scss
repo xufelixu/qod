@@ -12,6 +12,7 @@ body {
 
 //mobile
 
+
 .qod-logo {
     text-align: left;
     border: solid red;
@@ -24,69 +25,134 @@ body {
 }
 
 .post {
-    text-align: center;
+
     color: #ffffff;
     font-size: 16px;
     border: solid salmon;
-}
-
-.site-main {
-    display: grid;
-    grid-template-areas:
-        "post"
-        "quote-button";
-}
-
-.post {
-    grid-area: post;
+    text-align: left;
+    padding: 20px;
 }
 
 .new-quote-button {
-    grid-area: quote-button;
+    border: solid red;
+    display: block;
+    justify-content: flex-start;
 
 }
-
 
 .quote-icon-left,
 .quote-icon-right {
     display: none;
 }
 
+.site-info {
+    border: solid blue;
+    flex-wrap: wrap;
+    display: flex;
+    color: white;
+    font-family: Exo Web, sans-serif;
 
-@media only screen and (max-width: 600px) {
-    .site-main {
-        position: relative;
-        border: pink solid;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    a {
+        text-decoration: none;
+        color: #0c0;
+    }
 
-        .quote-icon-left {
+    .menu ul {
+        border: solid green;
+        text-align: center;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
 
-            grid-column: 1;
-            grid-row: 1;
+    li {
+        padding-left: 20px;
+        padding-right: 20px;
+        list-style: none;
+        border-right: solid white;
+        display: flex;
+    }
 
-        }
-
-        .post {
-
-            grid-column: 2;
-            grid-row: 1;
-        }
-
-        .quote-icon-right {
-            grid-column: 3;
-            grid-row: 1;
-
-
-        }
-
-        .new-quote-button {
-            grid-column-start: 1;
-            grid-column-end: 4;
-
-
-        }
+    .footer {
+        height: auto;
+        padding: 20px;
+        border: solid pink;
 
     }
+
 }
+
+@media all and (max-width: 960px) {}
+
+.qod-logo {
+
+    text-align: left;
+
+    img {
+        width: 60%;
+        height: auto;
+        border: solid greenyellow;
+    }
+}
+
+@media all and (max-width: 2040px) {
+
+    .quote-icon-left,
+    .quote-icon-right {
+        display: block;
+        border: solid goldenrod;
+    }
+
+    .qod-logo {
+        text-align: center;
+
+
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+//     .site-main {
+//         position: relative;
+//         border: pink solid;
+//         display: grid;
+//         grid-template-columns: 1fr 1fr 1fr;
+//         grid-template-rows: 1fr 1fr;
+
+//         .quote-icon-left {
+
+//             grid-column: 1;
+//             grid-row: 1;
+
+//         }
+
+//         .post {
+
+//             grid-column: 2;
+//             grid-row: 1;
+//         }
+
+//         .quote-icon-right {
+//             grid-column: 3;
+//             grid-row: 1;
+
+
+//         }
+
+//         .new-quote-button {
+//             grid-column-start: 1;
+//             grid-column-end: 4;
+
+
+//         }
+
+//     }

@@ -28,7 +28,7 @@
 
 	<!--qod-logo-->	
 	 <section class="qod-logo">
-	 <img src="<?php echo get_template_directory_uri() . '/qod-logo.svg' ?>"
+	 <a class="logo-link" href="http://localhost:3000/quotesondev"><img src="<?php echo get_template_directory_uri() . '/qod-logo.svg' ?>"
      class="qod-logos" alt="qod-logos"/></a>
      </section>
 

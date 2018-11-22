@@ -462,8 +462,7 @@ textarea {
           box-shadow: none;
   text-shadow: none;
   font-size: 16px;
-  display: block;
-  margin: 0 auto; }
+  padding: 20px; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -518,15 +517,17 @@ a {
     text-decoration: none; }
 
 /* Small menu. */
-.menu-toggle,
+.menu-toggle {
+  display: none; }
+
 .main-navigation.toggled ul {
   display: block; }
 
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
+.menu-toggle {
+  display: none; }
+
+.main-navigation ul {
+  display: block; }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -664,41 +665,67 @@ body {
     width: 300px; }
 
 .post {
-  text-align: center;
   color: #ffffff;
   font-size: 16px;
-  border: solid salmon; }
-
-.site-main {
-  display: grid;
-  grid-template-areas: "post" "quote-button"; }
-
-.post {
-  grid-area: post; }
+  border: solid salmon;
+  text-align: left;
+  padding: 20px; }
 
 .new-quote-button {
-  grid-area: quote-button; }
+  border: solid red;
+  display: block;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
 
 .quote-icon-left,
 .quote-icon-right {
   display: none; }
 
-@media only screen and (max-width: 600px) {
-  .site-main {
-    position: relative;
-    border: pink solid;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr; }
-    .site-main .quote-icon-left {
-      grid-column: 1;
-      grid-row: 1; }
-    .site-main .post {
-      grid-column: 2;
-      grid-row: 1; }
-    .site-main .quote-icon-right {
-      grid-column: 3;
-      grid-row: 1; }
-    .site-main .new-quote-button {
-      grid-column-start: 1;
-      grid-column-end: 4; } }
+.site-info {
+  border: solid blue;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-family: Exo Web, sans-serif; }
+  .site-info a {
+    text-decoration: none;
+    color: #0c0; }
+  .site-info .menu ul {
+    border: solid green;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0; }
+  .site-info li {
+    padding-left: 20px;
+    padding-right: 20px;
+    list-style: none;
+    border-right: solid white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .site-info .footer {
+    height: auto;
+    padding: 20px;
+    border: solid pink; }
+
+.qod-logo {
+  text-align: left; }
+  .qod-logo img {
+    width: 60%;
+    height: auto;
+    border: solid greenyellow; }
+
+@media all and (max-width: 2040px) {
+  .quote-icon-left,
+  .quote-icon-right {
+    display: block;
+    border: solid goldenrod; }
+  .qod-logo {
+    text-align: center; } }
