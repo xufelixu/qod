@@ -6,13 +6,9 @@
 
 /* Submit a Quote Page */
 
-
-
 body {
     background-color: #222222;
 }
-
-
 
 //home-page
 //mobile
@@ -29,7 +25,6 @@ body {
 }
 
 .post {
-
     color: #ffffff;
     font-size: 16px;
     border: solid salmon;
@@ -79,15 +74,12 @@ body {
         height: auto;
         padding: 20px;
         border: solid pink;
-
     }
-
 }
 
 @media all and (min-width: 600px) {}
 
 .qod-logo {
-
     text-align: left;
 
     img {
@@ -104,14 +96,13 @@ body {
         position: relative;
         left: 300px;
         text-align: center;
-
     }
 
     .quote-icon-left,
     .quote-icon-right {
         display: block;
         border: solid goldenrod;
-        width: 15%
+        width: 15%;
     }
 
     .quote-icon-left {
@@ -120,12 +111,10 @@ body {
         text-align: right;
     }
 
-
     .quote-icon-right {
         position: absolute;
         right: 30px;
     }
-
 
     .qod-logo {
         text-align: center;
@@ -144,9 +133,7 @@ body {
         display: block;
         justify-content: center;
         display: flex;
-
     }
-
 }
 
 .page {
@@ -156,6 +143,12 @@ body {
     .entry-content {
         color: white;
         border: solid blue;
+
+        a {
+            text-decoration: none;
+            color: #0c0;
+
+        }
     }
 
     .site-main {
@@ -164,14 +157,12 @@ body {
         margin-top: 20px;
     }
 
-
     @media all and (min-width: 1080px) {
-
         .entry-title {
             display: block;
             position: relative;
             width: 40%;
-            left: 280px;
+
         }
 
         .entry-content {
@@ -185,7 +176,7 @@ body {
         .quote-icon-right {
             display: block;
             border: solid goldenrod;
-            width: 15%
+            width: 15%;
         }
 
         .quote-icon-left {
@@ -194,22 +185,15 @@ body {
             text-align: right;
         }
 
-
         .quote-icon-right {
             position: absolute;
             right: 0px;
         }
-
-
     }
-
-
 }
-
 
 //archive page
 .page-template-default {
-
     .entry-title {
         font-family: Exo Web, sans-serif;
         padding-left: 2px;
@@ -218,7 +202,6 @@ body {
     .post-archives,
     .category-artchives,
     .tag-archives {
-
         ul {
             border: solid #0c0;
             list-style: none;
@@ -249,7 +232,6 @@ body {
             text-align: left;
             margin: 0px;
             position: relative;
-            left: 260px;
 
         }
 
@@ -273,34 +255,46 @@ body {
                 left: 260px;
             }
         }
+    }
+}
 
+
+
+
+//submit
+
+@media all and (min-width: 1080px) {
+
+
+    header.entry-header {
+        position: relative;
+        left: 300px;
     }
 
 }
 
+.quote-submission {
 
-//submit 
+
+
+    header.entry-header {
+        border: solid green;
+        color: white;
+        font-size: 14px;
+    }
+}
 
 .quote-submission-wrapper {
     margin-bottom: 50px;
     color: white;
 
-    .entry-header {
-        .entry-title-submit {
-
-            h1 {
-                border: solid green;
-            }
-        }
-    }
-
     .quote-author {
-
         input {
             margin: 5px;
             border: 1px solid #0c0;
             background-color: #222222;
             display: flex;
+            color: white;
         }
 
         label {
@@ -309,36 +303,41 @@ body {
     }
 
     .quote-content {
-
         label {
             padding: 5px;
+            font-size: 12px;
         }
 
         textarea {
             padding-left: 3px;
-            width: 90%;
+            width: 120%;
             height: 100px;
             margin: 5px;
             border: 1px solid #0c0;
             background-color: #222222;
+            font-size: 12px;
+            color: white;
         }
     }
 
     .quote-source,
     .quote-source-url {
-
         input {
             background-color: #222222;
             border: 1px solid #0c0;
             display: flex;
             margin-left: 5px;
             margin-bottom: 10px;
+            color: white;
+        }
+
+        label {
+            font-size: 12px;
         }
 
     }
 
     .submit-quote {
-
         input {
             color: #0c0;
             background-color: #222222;
@@ -353,26 +352,132 @@ body {
     }
 
     @media all and (min-width: 600px) {
-
         .quote-content {
             textarea {
                 padding-left: 3px;
-                width: 150%;
+                width: 250%;
                 height: 100px;
                 margin: 5px;
             }
         }
 
-    }
-
-    @media all and (min-width: 1040px) {
-
-        h1.entry-title-submit {
-            border: solid green;
+        .quote-source,
+        .quote-source-url {
+            input {
+                width: 150%;
+            }
 
         }
 
+        .quote-author {
+            input {
+                width: 150%;
+            }
+        }
+    }
 
+
+    @media all and (min-width: 1080px) {
+
+        .quote-content {
+            textarea {
+                position: relative;
+                left: 300px;
+            }
+
+            label {
+
+                position: relative;
+                left: 300px;
+            }
+
+        }
+
+        .quote-source,
+        .quote-source-url {
+            position: relative;
+            left: 300px;
+
+            label {
+                position: relative;
+                left: 30px;
+            }
+        }
+
+        .quote-author {
+            position: relative;
+            left: 300px;
+
+        }
+
+        .submit-quote {
+            input {
+                position: relative;
+                left: 300px;
+            }
+        }
 
     }
 }
+
+
+//archive page
+
+.archive {
+    .page-header {
+        display: none;
+    }
+}
+
+
+//404 page
+
+.error-404-not-found {
+    color: white;
+}
+
+.page-content {
+    font-size: 14px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.search-field {
+    background-color: transparent;
+}
+
+input[type=search] {
+    padding: 5px;
+    border: 1px solid #0c0;
+
+    &:focus {
+        border-color: white;
+        outline: none;
+    }
+}
+
+
+@media all and (min-width: 1080px) {
+
+    .page-header h1 {
+        width: 60%;
+        border: solid green;
+        position: relative;
+        left: 250px;
+    }
+
+    div.page-content {
+        border: solid green;
+        position: relative;
+        left: 250px;
+        width: 60%;
+
+    }
+}
+
+
+//search form

@@ -763,6 +763,10 @@ body {
 .page .entry-content {
   color: white;
   border: solid blue; }
+  .page .entry-title a,
+  .page .entry-content a {
+    text-decoration: none;
+    color: #0c0; }
 
 .page .site-main {
   border: red solid;
@@ -775,8 +779,7 @@ body {
   .page .entry-title {
     display: block;
     position: relative;
-    width: 40%;
-    left: 280px; }
+    width: 40%; }
   .page .entry-content {
     display: block;
     position: relative;
@@ -832,8 +835,7 @@ body {
     font-size: 32px;
     text-align: left;
     margin: 0px;
-    position: relative;
-    left: 260px; }
+    position: relative; }
   .page-template-default .post-archives,
   .page-template-default .category-artchives,
   .page-template-default .tag-archives {
@@ -854,29 +856,41 @@ body {
       position: relative;
       left: 260px; } }
 
+@media all and (min-width: 1080px) {
+  header.entry-header {
+    position: relative;
+    left: 300px; } }
+
+.quote-submission header.entry-header {
+  border: solid green;
+  color: white;
+  font-size: 14px; }
+
 .quote-submission-wrapper {
   margin-bottom: 50px;
   color: white; }
-  .quote-submission-wrapper .entry-header .entry-title-submit h1 {
-    border: solid green; }
   .quote-submission-wrapper .quote-author input {
     margin: 5px;
     border: 1px solid #0c0;
     background-color: #222222;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    color: white; }
   .quote-submission-wrapper .quote-author label {
     padding: 5px; }
   .quote-submission-wrapper .quote-content label {
-    padding: 5px; }
+    padding: 5px;
+    font-size: 12px; }
   .quote-submission-wrapper .quote-content textarea {
     padding-left: 3px;
-    width: 90%;
+    width: 120%;
     height: 100px;
     margin: 5px;
     border: 1px solid #0c0;
-    background-color: #222222; }
+    background-color: #222222;
+    font-size: 12px;
+    color: white; }
   .quote-submission-wrapper .quote-source input,
   .quote-submission-wrapper .quote-source-url input {
     background-color: #222222;
@@ -885,7 +899,11 @@ body {
     display: -ms-flexbox;
     display: flex;
     margin-left: 5px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    color: white; }
+  .quote-submission-wrapper .quote-source label,
+  .quote-submission-wrapper .quote-source-url label {
+    font-size: 12px; }
   .quote-submission-wrapper .submit-quote input {
     color: #0c0;
     background-color: #222222;
@@ -900,9 +918,68 @@ body {
   @media all and (min-width: 600px) {
     .quote-submission-wrapper .quote-content textarea {
       padding-left: 3px;
-      width: 150%;
+      width: 250%;
       height: 100px;
-      margin: 5px; } }
-  @media all and (min-width: 1040px) {
-    .quote-submission-wrapper h1.entry-title-submit {
-      border: solid green; } }
+      margin: 5px; }
+    .quote-submission-wrapper .quote-source input,
+    .quote-submission-wrapper .quote-source-url input {
+      width: 150%; }
+    .quote-submission-wrapper .quote-author input {
+      width: 150%; } }
+  @media all and (min-width: 1080px) {
+    .quote-submission-wrapper .quote-content textarea {
+      position: relative;
+      left: 300px; }
+    .quote-submission-wrapper .quote-content label {
+      position: relative;
+      left: 300px; }
+    .quote-submission-wrapper .quote-source,
+    .quote-submission-wrapper .quote-source-url {
+      position: relative;
+      left: 300px; }
+      .quote-submission-wrapper .quote-source label,
+      .quote-submission-wrapper .quote-source-url label {
+        position: relative;
+        left: 30px; }
+    .quote-submission-wrapper .quote-author {
+      position: relative;
+      left: 300px; }
+    .quote-submission-wrapper .submit-quote input {
+      position: relative;
+      left: 300px; } }
+
+.archive .page-header {
+  display: none; }
+
+.error-404-not-found {
+  color: white; }
+
+.page-content {
+  font-size: 14px; }
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+.search-field {
+  background-color: transparent; }
+
+input[type=search] {
+  padding: 5px;
+  border: 1px solid #0c0; }
+  input[type=search]:focus {
+    border-color: white;
+    outline: none; }
+
+@media all and (min-width: 1080px) {
+  .page-header h1 {
+    width: 60%;
+    border: solid green;
+    position: relative;
+    left: 250px; }
+  div.page-content {
+    border: solid green;
+    position: relative;
+    left: 250px;
+    width: 60%; } }

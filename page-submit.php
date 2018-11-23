@@ -10,8 +10,11 @@ get_header(); ?>
 <div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 <section class="quote-submission">
+<span class = "quote-icon-left"> <i class="fas fa-quote-left"></i></span>
+<span class="quote-icon-right" class="quote-icon"><i class="fas fa-quote-right"></i></span>
+
 <header class="entry-header">
-        <?php the_title('<h1 class="entry-title-submisson">','</h1>'); ?>
+        <?php the_title('<h1 class="entry-title-submission">','</h1>'); ?>
 </header>
 
 <?php if(is_user_logged_in() && current_user_can('edit_posts')): ?>

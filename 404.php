@@ -12,10 +12,11 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<section class="error-404 not-found">
+			<section class="error-404-not-found">
 			<header class="page-header">
 				
 	<span class = "quote-icon-left"> <i class="fas fa-quote-left"></i></span>
+	<span class="quote-icon-right"><i class="fas fa-quote-right"></i></span>
 			<h1 class="page-title"><?php echo esc_html( 'Oops! ' ); ?></h1>
 			</header><!-- .page-header -->
 
@@ -23,7 +24,7 @@ get_header(); ?>
 			<p><?php echo esc_html( 'It looks like nothing was found at this location. Maybe try a search?' ); ?></p>
 
 
-	 <span class="quote-icon-right"><i class="fas fa-quote-right"></i></span>
+	
 				   
 
 

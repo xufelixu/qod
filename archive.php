@@ -11,7 +11,9 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
-
+		<div class = "quote-icon-left"> <i class="fas fa-quote-left"></i></div>
+		
+		<div class="quote-icon-right"><i class="fas fa-quote-right"></i></div>	
 			<header class="page-header">
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
