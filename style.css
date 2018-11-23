@@ -997,17 +997,22 @@ body.search {
   body.search .site-main nav.number-pagination a.prev,
   body.search .site-main nav.number-pagination span.page-numbers {
     color: #0c0;
-    text-decoration: none; }
-  body.search .site-main nav.number-pagination a.page-numbers:visited {
-    color: white; }
+    text-decoration: none;
+    padding: 5px; }
   body.search .number-pagination {
     border: solid green; }
   @media all and (min-width: 1080px) {
     body.search h1.page-title {
       padding-left: 50px; }
-    body.search article {
+    body.search .entry-summary {
       font-size: 16px;
       padding-left: 0px;
       text-align: left; }
-    body.search header.entry-header h2.entry-title {
-      font-size: 24px; } }
+    body.search .entry-title {
+      font-size: 20px;
+      border: solid green;
+      position: relative;
+      left: -500px; }
+    body.search nav.number-pagination {
+      position: relative;
+      left: 250px; } }

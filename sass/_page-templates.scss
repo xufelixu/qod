@@ -503,11 +503,12 @@ body.search {
     .site-main nav.number-pagination span.page-numbers {
         color: #0c0;
         text-decoration: none;
+        padding: 5px;
     }
 
-    .site-main nav.number-pagination a.page-numbers:visited {
-        color: white;
-    }
+    // .site-main nav.number-pagination a.page-numbers:visited {
+    //     color: white;
+    // }
 
     .number-pagination {
 
@@ -521,15 +522,23 @@ body.search {
             padding-left: 50px;
         }
 
-        article {
+        .entry-summary {
             font-size: 16px;
             padding-left: 0px;
             text-align: left;
         }
 
-        header.entry-header h2.entry-title {
-
-            font-size: 24px;
+        .entry-title {
+            font-size: 20px;
+            border: solid green;
+            position: relative;
+            left: -500px;
         }
+
+        nav.number-pagination {
+            position: relative;
+            left: 250px;
+        }
+
     }
 }
