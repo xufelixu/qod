@@ -15,7 +15,7 @@ body {
 
 .qod-logo {
     text-align: left;
-    border: solid red;
+
 
     img {
         padding-left: 10px;
@@ -27,13 +27,13 @@ body {
 .post {
     color: #ffffff;
     font-size: 16px;
-    border: solid salmon;
+
     text-align: left;
     padding: 20px;
 }
 
 .new-quote-button {
-    border: solid red;
+
     display: block;
 }
 
@@ -43,7 +43,7 @@ body {
 }
 
 .site-info {
-    border: solid blue;
+
     flex-wrap: wrap;
     display: flex;
     color: white;
@@ -55,7 +55,7 @@ body {
     }
 
     .menu ul {
-        border: solid green;
+
         text-align: center;
         display: flex;
         margin: 0;
@@ -66,14 +66,14 @@ body {
         padding-left: 20px;
         padding-right: 20px;
         list-style: none;
-        border-right: solid white;
+
         display: flex;
     }
 
     .footer {
         height: auto;
         padding: 20px;
-        border: solid pink;
+
     }
 }
 
@@ -85,7 +85,7 @@ body {
     img {
         width: 60%;
         height: auto;
-        border: solid greenyellow;
+
     }
 }
 
@@ -101,7 +101,7 @@ body {
     .quote-icon-left,
     .quote-icon-right {
         display: block;
-        border: solid goldenrod;
+
         width: 15%;
     }
 
@@ -129,7 +129,7 @@ body {
     }
 
     .new-quote-button {
-        border: solid red;
+
         display: block;
         justify-content: center;
         display: flex;
@@ -142,7 +142,7 @@ body {
     .entry-title,
     .entry-content {
         color: white;
-        border: solid blue;
+
 
         a {
             text-decoration: none;
@@ -152,7 +152,7 @@ body {
     }
 
     .site-main {
-        border: red solid;
+
         display: flex;
         margin-top: 20px;
     }
@@ -175,7 +175,7 @@ body {
         .quote-icon-left,
         .quote-icon-right {
             display: block;
-            border: solid goldenrod;
+
             width: 15%;
         }
 
@@ -203,7 +203,7 @@ body {
     .category-artchives,
     .tag-archives {
         ul {
-            border: solid #0c0;
+
             list-style: none;
             display: flex;
             flex-wrap: wrap;
@@ -220,8 +220,7 @@ body {
         h2 {
             color: white;
             font-family: Exo Web, sans-serif;
-            padding: 10px;
-            border: solid blue;
+
             padding-left: 2px;
         }
     }
@@ -244,7 +243,7 @@ body {
                 color: white;
                 font-family: Exo Web, sans-serif;
                 padding: 10px;
-                border: solid blue;
+
                 position: relative;
                 left: 260px;
                 margin-top: 0px;
@@ -278,7 +277,7 @@ body {
 
 
     header.entry-header {
-        border: solid green;
+
         color: white;
         font-size: 14px;
     }
@@ -291,7 +290,7 @@ body {
     .quote-author {
         input {
             margin: 5px;
-            border: 1px solid #0c0;
+            border: 2px solid #0c0;
             background-color: #222222;
             display: flex;
             color: white;
@@ -313,7 +312,7 @@ body {
             width: 120%;
             height: 100px;
             margin: 5px;
-            border: 1px solid #0c0;
+            border: 2px solid #0c0;
             background-color: #222222;
             font-size: 12px;
             color: white;
@@ -324,7 +323,7 @@ body {
     .quote-source-url {
         input {
             background-color: #222222;
-            border: 1px solid #0c0;
+            border: 2px solid #0c0;
             display: flex;
             margin-left: 5px;
             margin-bottom: 10px;
@@ -343,7 +342,7 @@ body {
             background-color: #222222;
             box-shadow: none;
             text-shadow: none;
-            border: 1px solid #0c0;
+            border: 2px solid #0c0;
             padding: 10px 40px;
             margin-left: 5px;
             font-family: Exo Web, sans-serif;
@@ -432,6 +431,16 @@ body {
 
 //404 page
 
+button.search-submit {
+    background: transparent;
+    box-shadow: none;
+    color: #0c0;
+    border: none;
+    font-size: 16px;
+    text-shadow: none;
+
+}
+
 .error-404-not-found {
     color: white;
 }
@@ -452,7 +461,7 @@ fieldset {
 
 input[type=search] {
     padding: 5px;
-    border: 1px solid #0c0;
+    border: 2px solid #0c0;
 
     &:focus {
         border-color: white;
@@ -465,13 +474,13 @@ input[type=search] {
 
     .page-header h1 {
         width: 60%;
-        border: solid green;
+
         position: relative;
         left: 250px;
     }
 
     div.page-content {
-        border: solid green;
+
         position: relative;
         left: 250px;
         width: 60%;
@@ -489,7 +498,7 @@ body.search {
 
     .page-header {
 
-        border: green solid;
+
         color: white;
     }
 
@@ -506,14 +515,7 @@ body.search {
         padding: 5px;
     }
 
-    // .site-main nav.number-pagination a.page-numbers:visited {
-    //     color: white;
-    // }
 
-    .number-pagination {
-
-        border: solid green;
-    }
 
 
     @media all and (min-width: 1080px) {
@@ -530,7 +532,7 @@ body.search {
 
         .entry-title {
             font-size: 20px;
-            border: solid green;
+
             position: relative;
             left: -500px;
         }

@@ -81,14 +81,13 @@
                 })
                 .done(function () {
                     console.log();
-                    // $('#quote-submission-form').hide();
-                    // $('.quote-submission-wrapper').append(api_vars.success)
-                    //     .sildeDown('slow');
+                    $('#quote-submission-form').hide();
+                    $('.quote-submission-wrapper').append('Thank your! See you next time!');
                 })
-                .fail(function (err) {
-                    console.log(err);
-                    // $('#quote-submission-form').hide();
-                    // $('.quote-submission-wrapper').append(api_vars.failure);
+                .fail(function () {
+                    console.log();
+                    $('#quote-submission-form').hide();
+                    $('.quote-submission-wrapper').append('Sorry,you must be logged in to submit a quote!');
                 })
         }
     }) // end of doc ready
