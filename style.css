@@ -759,6 +759,150 @@ body {
     display: -ms-flexbox;
     display: flex; } }
 
-.entry-title,
-.entry-content {
+.page .entry-title,
+.page .entry-content {
+  color: white;
+  border: solid blue; }
+
+.page .site-main {
+  border: red solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px; }
+
+@media all and (min-width: 1080px) {
+  .page .entry-title {
+    display: block;
+    position: relative;
+    width: 40%;
+    left: 280px; }
+  .page .entry-content {
+    display: block;
+    position: relative;
+    width: 58%;
+    left: 280px; }
+  .page .quote-icon-left,
+  .page .quote-icon-right {
+    display: block;
+    border: solid goldenrod;
+    width: 15%; }
+  .page .quote-icon-left {
+    position: absolute;
+    left: 0px;
+    text-align: right; }
+  .page .quote-icon-right {
+    position: absolute;
+    right: 0px; } }
+
+.page-template-default .entry-title {
+  font-family: Exo Web, sans-serif;
+  padding-left: 2px; }
+
+.page-template-default .post-archives ul,
+.page-template-default .category-artchives ul,
+.page-template-default .tag-archives ul {
+  border: solid #0c0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 0px;
+  padding-left: 1px; }
+  .page-template-default .post-archives ul li a,
+  .page-template-default .category-artchives ul li a,
+  .page-template-default .tag-archives ul li a {
+    text-decoration: none;
+    color: #0c0;
+    padding: 5px; }
+
+.page-template-default .post-archives h2,
+.page-template-default .category-artchives h2,
+.page-template-default .tag-archives h2 {
+  color: white;
+  font-family: Exo Web, sans-serif;
+  padding: 10px;
+  border: solid blue;
+  padding-left: 2px; }
+
+@media all and (min-width: 1080px) {
+  .page-template-default .entry-title {
+    font-size: 32px;
+    text-align: left;
+    margin: 0px;
+    position: relative;
+    left: 260px; }
+  .page-template-default .post-archives,
+  .page-template-default .category-artchives,
+  .page-template-default .tag-archives {
+    width: 60%; }
+    .page-template-default .post-archives h2,
+    .page-template-default .category-artchives h2,
+    .page-template-default .tag-archives h2 {
+      color: white;
+      font-family: Exo Web, sans-serif;
+      padding: 10px;
+      border: solid blue;
+      position: relative;
+      left: 260px;
+      margin-top: 0px; }
+    .page-template-default .post-archives ul,
+    .page-template-default .category-artchives ul,
+    .page-template-default .tag-archives ul {
+      position: relative;
+      left: 260px; } }
+
+.quote-submission-wrapper {
+  margin-bottom: 50px;
   color: white; }
+  .quote-submission-wrapper .entry-header .entry-title-submit h1 {
+    border: solid green; }
+  .quote-submission-wrapper .quote-author input {
+    margin: 5px;
+    border: 1px solid #0c0;
+    background-color: #222222;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .quote-submission-wrapper .quote-author label {
+    padding: 5px; }
+  .quote-submission-wrapper .quote-content label {
+    padding: 5px; }
+  .quote-submission-wrapper .quote-content textarea {
+    padding-left: 3px;
+    width: 90%;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid #0c0;
+    background-color: #222222; }
+  .quote-submission-wrapper .quote-source input,
+  .quote-submission-wrapper .quote-source-url input {
+    background-color: #222222;
+    border: 1px solid #0c0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 5px;
+    margin-bottom: 10px; }
+  .quote-submission-wrapper .submit-quote input {
+    color: #0c0;
+    background-color: #222222;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none;
+    border: 1px solid #0c0;
+    padding: 10px 40px;
+    margin-left: 5px;
+    font-family: Exo Web, sans-serif;
+    font-size: 1em; }
+  @media all and (min-width: 600px) {
+    .quote-submission-wrapper .quote-content textarea {
+      padding-left: 3px;
+      width: 150%;
+      height: 100px;
+      margin: 5px; } }
+  @media all and (min-width: 1040px) {
+    .quote-submission-wrapper h1.entry-title-submit {
+      border: solid green; } }

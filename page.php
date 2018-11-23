@@ -16,7 +16,7 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 		  <span class = "quote-icon-left"> <i class="fas fa-quote-left"></i></span>
-          <span class="quote-icon-left"><i class="fas fa-quote-right"></i></span>
+          <span class="quote-icon-right"><i class="fas fa-quote-right"></i></span>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

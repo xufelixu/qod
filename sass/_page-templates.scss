@@ -149,11 +149,230 @@ body {
 
 }
 
-//about
-.entry-title,
-.entry-content {
-    color: white;
+.page {
+
+    //about
+    .entry-title,
+    .entry-content {
+        color: white;
+        border: solid blue;
+    }
+
+    .site-main {
+        border: red solid;
+        display: flex;
+        margin-top: 20px;
+    }
+
+
+    @media all and (min-width: 1080px) {
+
+        .entry-title {
+            display: block;
+            position: relative;
+            width: 40%;
+            left: 280px;
+        }
+
+        .entry-content {
+            display: block;
+            position: relative;
+            width: 58%;
+            left: 280px;
+        }
+
+        .quote-icon-left,
+        .quote-icon-right {
+            display: block;
+            border: solid goldenrod;
+            width: 15%
+        }
+
+        .quote-icon-left {
+            position: absolute;
+            left: 0px;
+            text-align: right;
+        }
+
+
+        .quote-icon-right {
+            position: absolute;
+            right: 0px;
+        }
+
+
+    }
+
 
 }
 
-@media all and (min-width: 1080px) {}
+
+//archive page
+.page-template-default {
+
+    .entry-title {
+        font-family: Exo Web, sans-serif;
+        padding-left: 2px;
+    }
+
+    .post-archives,
+    .category-artchives,
+    .tag-archives {
+
+        ul {
+            border: solid #0c0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 0px;
+            padding-left: 1px;
+
+            li a {
+                text-decoration: none;
+                color: #0c0;
+                padding: 5px;
+            }
+        }
+
+        h2 {
+            color: white;
+            font-family: Exo Web, sans-serif;
+            padding: 10px;
+            border: solid blue;
+            padding-left: 2px;
+        }
+    }
+
+    @media all and (min-width: 1080px) {
+        .entry-title {
+            font-size: 32px;
+            text-align: left;
+            margin: 0px;
+            position: relative;
+            left: 260px;
+
+        }
+
+        .post-archives,
+        .category-artchives,
+        .tag-archives {
+            width: 60%;
+
+            h2 {
+                color: white;
+                font-family: Exo Web, sans-serif;
+                padding: 10px;
+                border: solid blue;
+                position: relative;
+                left: 260px;
+                margin-top: 0px;
+            }
+
+            ul {
+                position: relative;
+                left: 260px;
+            }
+        }
+
+    }
+
+}
+
+
+//submit 
+
+.quote-submission-wrapper {
+    margin-bottom: 50px;
+    color: white;
+
+    .entry-header {
+        .entry-title-submit {
+
+            h1 {
+                border: solid green;
+            }
+        }
+    }
+
+    .quote-author {
+
+        input {
+            margin: 5px;
+            border: 1px solid #0c0;
+            background-color: #222222;
+            display: flex;
+        }
+
+        label {
+            padding: 5px;
+        }
+    }
+
+    .quote-content {
+
+        label {
+            padding: 5px;
+        }
+
+        textarea {
+            padding-left: 3px;
+            width: 90%;
+            height: 100px;
+            margin: 5px;
+            border: 1px solid #0c0;
+            background-color: #222222;
+        }
+    }
+
+    .quote-source,
+    .quote-source-url {
+
+        input {
+            background-color: #222222;
+            border: 1px solid #0c0;
+            display: flex;
+            margin-left: 5px;
+            margin-bottom: 10px;
+        }
+
+    }
+
+    .submit-quote {
+
+        input {
+            color: #0c0;
+            background-color: #222222;
+            box-shadow: none;
+            text-shadow: none;
+            border: 1px solid #0c0;
+            padding: 10px 40px;
+            margin-left: 5px;
+            font-family: Exo Web, sans-serif;
+            font-size: 1em;
+        }
+    }
+
+    @media all and (min-width: 600px) {
+
+        .quote-content {
+            textarea {
+                padding-left: 3px;
+                width: 150%;
+                height: 100px;
+                margin: 5px;
+            }
+        }
+
+    }
+
+    @media all and (min-width: 1040px) {
+
+        h1.entry-title-submit {
+            border: solid green;
+
+        }
+
+
+
+    }
+}
