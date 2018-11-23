@@ -983,3 +983,31 @@ input[type=search] {
     position: relative;
     left: 250px;
     width: 60%; } }
+
+body.search {
+  color: #fff;
+  font-family: Exo Web, sans-serif; }
+  body.search .page-header {
+    border: green solid;
+    color: white; }
+  body.search .entry-header h2 a {
+    color: #0c0;
+    text-decoration: none; }
+  body.search .site-main nav.number-pagination a.page-numbers,
+  body.search .site-main nav.number-pagination a.prev,
+  body.search .site-main nav.number-pagination span.page-numbers {
+    color: #0c0;
+    text-decoration: none; }
+  body.search .site-main nav.number-pagination a.page-numbers:visited {
+    color: white; }
+  body.search .number-pagination {
+    border: solid green; }
+  @media all and (min-width: 1080px) {
+    body.search h1.page-title {
+      padding-left: 50px; }
+    body.search article {
+      font-size: 16px;
+      padding-left: 0px;
+      text-align: left; }
+    body.search header.entry-header h2.entry-title {
+      font-size: 24px; } }

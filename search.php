@@ -9,7 +9,9 @@ get_header(); ?>
 
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+		<div class = "quote-icon-left"> <i class="fas fa-quote-left"></i></div>
+		
+		<div class="quote-icon-right"><i class="fas fa-quote-right"></i></div>		
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
