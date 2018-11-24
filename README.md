@@ -1,5 +1,5 @@
 # Quotes on Dev (in WordPress)
-<img src="quotesondev/ScreenShot /screenShot .png" alt="
+<img src="/ScreenShot /screenShot .png" alt="
 Screen_Shot_of_the_Home_Page_desktop">
 
 ##Gernerl requirements:
