@@ -1,9 +1,5 @@
 # Quotes on Dev (in WordPress)
-<<<<<<< HEAD
 <img src="/ScreenShot/screenShot .png" alt="
-=======
-<img src="/ScreenShot /screenShot .png" alt="
->>>>>>> a59d0022b4aa9eecb76a5082d33659a6a90c9a3c
 Screen_Shot_of_the_Home_Page_desktop">
 
 ##Gernerl requirements:
