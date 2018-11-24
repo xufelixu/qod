@@ -229,30 +229,25 @@ th {
   font-style: normal; }
 
 @font-face {
-  font-family: 'Exo';
+  font-family: 'Exo-LightItalic';
   src: url("../../font/Exo-LightItalic.eot");
   src: url("../../font/Exo-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../font/Exo-LightItalic.woff2") format("woff2"), url("../../font/Exo-LightItalic.woff") format("woff"), url("../../font/Exo-LightItalic.ttf") format("truetype"), url("../../font/Exo-LightItalic.svg#Exo-LightItalic") format("svg");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
-  font-family: 'Exo';
+  font-family: 'Exo-Medium';
   src: url("../../font/Exo-Medium.eot");
   src: url("../../font/Exo-Medium.eot?#iefix") format("embedded-opentype"), url("../../font/Exo-Medium.woff2") format("woff2"), url("../../font/Exo-Medium.woff") format("woff"), url("../../font/Exo-Medium.ttf") format("truetype"), url("../../font/Exo-Medium.svg#Exo-Medium") format("svg");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Exo';
+  font-family: 'Exo-MediumItalic';
   src: url("../../font/Exo-MediumItalic.eot");
   src: url("../../font/Exo-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../../font/Exo-MediumItalic.woff2") format("woff2"), url("../../font/Exo-MediumItalic.woff") format("woff"), url("../../font/Exo-MediumItalic.ttf") format("truetype"), url("../../font/Exo-MediumItalic.svg#Exo-MediumItalic") format("svg");
   font-weight: 500;
   font-style: italic; }
-
-.quote-icon-left,
-.quote-icon-right {
-  font-size: 100px;
-  color: #00cc00; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -453,7 +448,7 @@ textarea {
   width: 100%; }
 
 #new-quote-button {
-  border: 1px solid #00cc00;
+  border: 2px solid #00cc00;
   color: #00cc00;
   background: #222222;
   -webkit-box-shadow: none;
@@ -545,6 +540,9 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
+
+div.site-info {
+  margin-top: 50px; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -654,6 +652,31 @@ object {
 body {
   background-color: #222222; }
 
+.quote-icon-left,
+.quote-icon-right {
+  font-size: 100px;
+  color: #00cc00; }
+
+.entry-meta {
+  font-size: 16px;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.source {
+  font-size: 24px;
+  padding-top: 20px;
+  font-style: italic; }
+
+.nav-previous,
+.nav-next {
+  display: none; }
+
+span.source a {
+  text-decoration: none;
+  color: #0c0; }
+
 .qod-logo {
   text-align: left; }
   .qod-logo img {
@@ -664,6 +687,7 @@ body {
 .post {
   color: #ffffff;
   font-size: 16px;
+  font-family: Exo, sans-serif;
   text-align: left;
   padding: 20px; }
 
@@ -701,7 +725,7 @@ body {
     display: flex; }
   .site-info .footer {
     height: auto;
-    padding: 20px; }
+    padding-right: 20px; }
 
 .qod-logo {
   text-align: left; }
@@ -767,7 +791,8 @@ body {
   .page .entry-title {
     display: block;
     position: relative;
-    width: 40%; }
+    width: 40%;
+    left: -20px; }
   .page .entry-content {
     display: block;
     position: relative;
@@ -816,7 +841,7 @@ body {
 
 @media all and (min-width: 1080px) {
   .page-template-default .entry-title {
-    font-size: 32px;
+    font-size: 30px;
     text-align: left;
     margin: 0px;
     position: relative; }
@@ -927,6 +952,9 @@ body {
       position: relative;
       left: 300px; }
     .quote-submission-wrapper .submit-quote input {
+      position: relative;
+      left: 300px; }
+    .quote-submission-wrapper P {
       position: relative;
       left: 300px; } }
 

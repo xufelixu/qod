@@ -10,8 +10,44 @@ body {
     background-color: #222222;
 }
 
+//quote icon
+
+.quote-icon-left,
+.quote-icon-right {
+    font-size: 100px;
+    color: #00cc00;
+}
+
+
 //home-page
 //mobile
+
+.entry-meta {
+    font-size: 16px;
+    text-align: left;
+    display: flex;
+}
+
+.source {
+    font-size: 24px;
+    padding-top: 20px;
+    font-style: italic;
+
+}
+
+.nav-previous,
+.nav-next {
+
+    display: none;
+}
+
+span.source a {
+
+    text-decoration: none;
+    color: #0c0;
+    ;
+
+}
 
 .qod-logo {
     text-align: left;
@@ -27,7 +63,7 @@ body {
 .post {
     color: #ffffff;
     font-size: 16px;
-
+    font-family: Exo, sans-serif;
     text-align: left;
     padding: 20px;
 }
@@ -72,7 +108,7 @@ body {
 
     .footer {
         height: auto;
-        padding: 20px;
+        padding-right: 20px;
 
     }
 }
@@ -101,7 +137,6 @@ body {
     .quote-icon-left,
     .quote-icon-right {
         display: block;
-
         width: 15%;
     }
 
@@ -133,12 +168,23 @@ body {
         display: block;
         justify-content: center;
         display: flex;
+
     }
+
+    // p.entry-content {
+    //     text-align: left;
+
+
+
+
+
 }
 
+//about
 .page {
 
-    //about
+
+
     .entry-title,
     .entry-content {
         color: white;
@@ -162,7 +208,7 @@ body {
             display: block;
             position: relative;
             width: 40%;
-
+            left: -20px;
         }
 
         .entry-content {
@@ -227,7 +273,7 @@ body {
 
     @media all and (min-width: 1080px) {
         .entry-title {
-            font-size: 32px;
+            font-size: 30px;
             text-align: left;
             margin: 0px;
             position: relative;
@@ -273,11 +319,7 @@ body {
 }
 
 .quote-submission {
-
-
-
     header.entry-header {
-
         color: white;
         font-size: 14px;
     }
@@ -365,7 +407,6 @@ body {
             input {
                 width: 150%;
             }
-
         }
 
         .quote-author {
@@ -377,7 +418,6 @@ body {
 
 
     @media all and (min-width: 1080px) {
-
         .quote-content {
             textarea {
                 position: relative;
@@ -389,7 +429,6 @@ body {
                 position: relative;
                 left: 300px;
             }
-
         }
 
         .quote-source,
@@ -414,6 +453,12 @@ body {
                 position: relative;
                 left: 300px;
             }
+        }
+
+        P {
+            position: relative;
+            left: 300px;
+
         }
 
     }

@@ -82,12 +82,12 @@
                 .done(function () {
                     console.log();
                     $('#quote-submission-form').hide();
-                    $('.quote-submission-wrapper').append('Thank your! See you next time!');
+                    $('.quote-submission-wrapper').append('<p>' + qod_vars.success + '</p>');
                 })
                 .fail(function () {
                     console.log();
                     $('#quote-submission-form').hide();
-                    $('.quote-submission-wrapper').append('Sorry,you must be logged in to submit a quote!');
+                    $('.quote-submission-wrapper').append('<p>' + qod_vars.failture + '</p>');
                 })
         }
     }) // end of doc ready
