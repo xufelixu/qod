@@ -1,23 +1,47 @@
-# Quotes on Dev Starter
+# Quotes on Dev (in WordPress)
 
-A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+![Screen Shot of the Home Page (desktop)](screenShot.png)
 
-## Installation
+##Gernerl requirements:
 
-### 1. Download me (don't clone me!)
+  * git
+  * MAMP 
+  * Vs Code 
+  * WordPress.org account
+  * WordPress starter theme 
+  * WordPress importer (plugin)
 
-Then add me to your `wp-content/themes` directory.
+## Tech & Languages
 
-### 2. Rename the `quotesondev-starter-master` directory
+  * PHP
+  * HTML
+  * JQUERY
+  * CSS/SASS
+  * JAVASCRIPT
 
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
+## Personal Learnings
 
-### 3. Install the dev dependencies
+1. wp_create_nonce
+2. wp_localize_script
+3. WP REST API 
+ 4. Endpoint Parameters
+ 5.  wp_enqueue_script
 
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
 
-### 4. Update the proxy in `gulpfile.js`
 
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+ ## Useful Links
+ 
+ 1. http://v2.wp-api.org/
+2. https://developer.wordpress.org/rest-api/
 
-And now would be a good time to `git init` :)
+
+
+
+
+
+
+
+
+
+
+
