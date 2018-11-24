@@ -1,6 +1,6 @@
 # Quotes on Dev (in WordPress)
-
-![Screen Shot of the Home Page (desktop)](screenShot.png)
+<img src="/Applications/MAMP/htdocs/quotesondev/wp-content/themes/quotesondev/screenShot .png" alt="
+Screen_Shot_of_the_Home_Page_desktop">
 
 ##Gernerl requirements:
 
